@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./CSS/main.css">
+</head>
+<body>
+    <div class="navbar_container">
+        <div class="navbar">
+            <div style="height: 20px;">
+                <a href="./index.html"><img src="https://cdn-icons-png.flaticon.com/512/11397/11397299.png " width="15" height="15" alt="" title="" class="img-small"></a>
+            </div>
+            <div><h1>ABOUT</h1></div>
+            <div><h1>WORK</h1></div>
+            <div><h1>CONTACT</h1></div>
+
+        </div>
+    </div>
+
+    <section style="text-align: center; padding-top: 100px;">
+        <h1 style="text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 0.6px;">Portfolio - Nattatapol</h1>
+    </section>
+    
+    <section style="text-align: center; padding-top: 100px;">
+        <h1 style="text-decoration: underline; text-underline-offset: 7px; text-decoration-thickness: 0.6px;">Works</h1>
+        <div class="work_container">
+            <div class="work_content">
+                <p>test</p>
+            </div>
+            <div class="work_footer">
+                <div class="work_leftside">
+                    <p>Header</p>
+                </div>
+                <div class="work_rightside">
+                    <div>
+                        <p>view</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    .work_container{
+        justify-content: center;
+        background-color: rgb(238, 238, 238);
+        border: 0.5px solid rgba(255, 255, 255, 0);
+        border-radius: 10px;
+        margin: 5vh 20vh 0 20vh;
+        height: 500px;
+    }
+    .work_content{
+        background-color: white;
+        border: 0.6px solid rgba(97, 97, 97, 0.274);
+        box-shadow: rgb(219, 219, 219) 0px 8px 0px 0px;
+        height: 87%;
+        border-radius: 10px;
+        transition: all 0.3s ease; /* Transition added here */
+    }
+
+    .work_content:hover{
+        border: 0.5px solid rgb(0, 0, 0);
+        box-shadow: rgb(177, 177, 177) 0px 10px 0px 0px;
+    }
+
+    .work_footer {
+        display: flex;
+        flex-direction: row;
+        align-content: space-between;
+        justify-content: space-between; /* This will position the children on opposite sides */
+        height: max-content;
+    }
+
+    .work_leftside {
+        text-align: left;
+        padding: 20px;
+        font-size: large;
+        font-weight: 500;
+    }
+
+    .work_rightside {
+        text-align: center;
+        margin: 20px;
+        font-weight: 500;
+    }
+    .work_rightside div{
+        border: 0.5px solid rgb(200, 200, 200);
+        border-radius: 10px;
+        width: 80px;
+        justify-content: space-between; /* This will position the children on opposite sides */
+        height: max-content;
+        padding: 5px;
+        background-color: white;
+
+        cursor: pointer;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+    .navbar_container {
+        background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        width: 100vw;
+        height: 100px; /* Adjust the height as needed */
+        border-bottom: 0.5px solid black;
+    }
+
+    .navbar {
+        background-color: white;
+        display: flex;
+        justify-content: space-around; /* This will space out your menu items evenly */
+        width: fit-content;
+        gap: 50px;
+    }
+    .navbar img{
+        cursor: pointer;
+        transition: all 0.7s ease; 
+    }
+    .navbar img:hover{
+        width: 20px;
+        height: 20px;
+
+    }
+    .navbar h1{
+        font-size: large;
+        font-weight: 300;
+        cursor: pointer;
+        transition: all 0.7s ease; 
+    }
+
+    .navbar h1:hover{
+        text-decoration: underline; /* This will underline the text on hover */
+        text-underline-offset: 7px;
+        text-decoration-thickness: 2px;
+    }
+
+</style>
